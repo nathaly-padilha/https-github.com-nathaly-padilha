@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br"><head>
+	<meta charset="utf-8">
+	<title>Nathaly Padilha - Designer Gráfico</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- navegacao -->
+	<nav>
+		<div class="container">
+			<a href="#bio">Bio</a>
+			<a href="#galeria">Trabalhos</a>
+			<a href="#contato">Contato</a>
+		</div>
+	</nav>
+	<!-- navegacao fim -->
+
+
+	<!-- cabecalho -->
+	<header>
+		<div class="container">
+			<img id="avatar" src="img/foto_nathaly.png" alt="foto da Nathaly">
+			<div id="header-info">
+				<p>Olá, sou a</p>
+				<h1>Nathaly Padilha</h1>
+				<h2>Designer Gráfico</h2>
+			</div>
+		</div>
+		
+	</header>
+	<!-- cabecalho fim -->
+
+
+	<!-- bio -->
+	<section id="bio">
+		<div class="container">
+			<h2 class="subtit">Bio</h2>
+			<p>Atualmente desenvolvo soluções de design para as demandas da área de Comunicação Interna e Endomarketing, bem como, o trabalho ativo nas atividades multidisciplinares que englobam o atendimento aos clientes internos, a administração de orçamento, criação da identidade visual e execução das campanhas estratégicas da corporação, com foco sempre voltado ao colaborador.</p>
+		</div>
+		
+		<div class="form-grupo">
+				<a href="https://www.linkedin.com/in/nathaly-padilha-27122712nep/" class="btn" target="_linkedin">Currículo completo</a>
+		</div>
+		
+	</section>
+	<!-- bio fim -->
+
+
+	<!-- trabalhos -->
+	<section id="trabalhos">
+		<div class="container">
+
+			<h2 class="subtit">Trabalhos</h2>
+
+
+			<!-- grid - inicio -->
+			<div class="grid-galeria">
+				<figure>
+				  <a href="img/pagina_intranet.png"><img src="img/intranet_2.png" alt="Descricao da imagem" width="300"></a>
+				  <figcaption>Intranet Leo Madeiras</figcaption>
+				</figure>
+
+				<figure>
+				  <a href="img/pixel_show.jpeg"><img src="img/pixel_show_miniatura.png" alt="Descricao da imagem" width="300"></a>
+				  <figcaption>Pixel Show 2022 - Leo Social&nbsp;</figcaption>
+				</figure>
+
+				<figure>
+				  <a href="img/novembro_azul_galeria.png"><img src="img/novembro_azul.png" alt="Descricao da imagem" width="300"></a>
+				  <figcaption>Outubro Rosa e Novembro Azul 2022</figcaption>
+				</figure>
+				
+			</div>
+			<div id="hiddenLayer" class="grid-galeria hiddenLayer">
+				<figure>
+					<a href="img/placa_de_vagas.jpg"><img src="img/placa_de_vagas_mini.png" alt="Descricao da imagem" width="300"></a>
+					<figcaption>Placa de Vagas Leo 2023</figcaption>
+				  </figure>
+  
+				  <figure>
+					<a href="img/kit_integração_paginas.png"><img src="img/kit_integração_mini.png" alt="Descricao da imagem" width="300"></a>
+					<figcaption>Moleskine do Kit Integração 2023&nbsp;</figcaption>
+				  </figure>
+  
+				  <figure>
+					<a href="img/logo_pod_leo.png"><img src="img/logo_pod_leo_mini.png" alt="Descricao da imagem" width="300"></a>
+					<figcaption>Logo Podcast Leo</figcaption>
+				  </figure>
+
+			</div>
+			<!-- grid - fim -->
+			
+			<div class="form-grupo">
+					<a class="btn" id="seeMore" onclick="seeMore()">Ver mais</a>
+			</div>
+
+		</div>
+	</section>
+	<!-- galeria fim -->
+
+
+	<!-- contato -->
+	<section id="contato">
+			<h2 class="subtit">Contato</h2>
+			<form action="#">
+
+				<div class="form-grupo">
+					<a href="mailto:nathemily57@gmail.com">E-mail</a>
+					
+				</div>
+
+				<div class="form-grupo">
+					<a href="http://wa.me/5511945504176" target="_wa">WhatsApp</a>
+					
+			  </div>
+
+			</form>
+	</section>
+	<!-- contato fim -->
+	
+	<!-- redes_sociais -->
+	<section id="contato">
+			<h2 class="subtit">Redes Sociais</h2>
+			<form action="#">
+
+				<div class="form-grupo">
+					<a href="https://www.behance.net/padilhanathaly?tracking_source=search_users|nathaly%20padilha" target="_behance">Behance</a>
+					
+				</div>
+
+				<div class="form-grupo">
+					<a href="https://www.linkedin.com/in/nathaly-padilha-27122712nep/" target="_linkedin">LinkedIn</a>
+					
+			  </div>
+
+			</form>
+	</section>
+	<!-- contato fim -->
+
+	
+	<!-- rodape -->
+	<footer>
+		<div class="container">
+			<p>&copy; Nathaly Padilha, 2023. nathemily57@gmail.com<br>
+			</p>
+		</div>
+	</footer>
+	<!-- rodape fim -->
+
+</body>
+<script>
+	function seeMore(){
+		document.getElementById("hiddenLayer").classList.remove('hiddenLayer');
+		document.getElementById("seeMore").classList.add('hiddenLayer');
+	}
+</script>
+</html>
